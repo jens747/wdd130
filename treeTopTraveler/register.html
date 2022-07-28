@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Top Traveler</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/logo3.png?v=1646326109037"
+          alt="Tree Top Traveler Co. Logo"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="register-box">
+      <h2>Registration</h2>
+      <p>
+        Please register to get started on your next big tree house adventure.
+        After you have registered and provided us with the necessary information
+        you will be able to browse our extensive listing of availabilities.
+      </p>
+      <hr />
+        
+        <form action="/my-handling-form-page" method="post">
+          <ul class="register-list-grid">
+            <li class="register-li" id="img1-li">
+              <img
+            src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/t7-mexico-tiff-ng-canva.png?v=1645935104289"
+            alt="Tree house with good vibes only sign"
+              />
+            </li>
+            <li class="register-li register-form" id="fname-li">
+              <label for="fname" class="register-label">First Name:</label>
+              <input type="text" class="register-input" id="fname" name="first_name" />
+            </li>
+            <li class="register-li register-form" id="lname-li">
+              <label for="lname" class="register-label">Last Name:</label>
+              <input type="text" class="register-input" id="lname" name="last_name" />
+            </li>
+  <!--           <li>
+              <label for="uname" class="register-label">User Name:</label>
+              <input type="text" id="uname" name="user_name" />
+            </li> -->
+            <li class="register-li register-form" id="password-li">
+              <label for="password" class="register-label">Password:</label>
+              <input type="password" class="register-input" id="password" name="password" />
+            </li>
+  <!--           <li>
+              <label for="phone" class="register-label">Phone Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+            </li> -->
+            <li class="register-li register-form" id="email-li">
+              <label for="mail" class="register-label">E-mail:</label>
+              <input type="email" class="register-input" id="mail" name="user_email" />
+            </li>
+  <!--           <li>
+              <label for="address" class="register-label">Street Address:</label>
+              <input type="text" id="address" name="address" />
+            </li>
+            <li>
+              <label for="state" class="register-label">State:</label>
+              <select id="state" name="state">
+                <option value="state" default>Select State</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AS">American Samoa</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="UM-81">Baker Island</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="GU">Guam</option>
+                <option value="HI">Hawaii</option>
+                <option value="UM-84">Howland Island</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="UM-86">Jarvis Island</option>
+                <option value="UM-67">Johnston Atoll</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="UM-89">Kingman Reef</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="UM-71">Midway Atoll</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="UM-76">Navassa Island</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="MP">Northern Mariana Islands</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="UM-95">Palmyra Atoll</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UM">United States Minor Outlying Islands</option>
+                <option value="VI">United States Virgin Islands</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="UM-79">Wake Island</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>
+            </li>
+            <li>
+              <label for="zip_code" class="register-label">Zip Code:</label>
+              <input type="text" id="zip_code" name="zip_code" />
+            </li>
+            <li>
+              <span>
+                <label for="billing_address" class="register-label"></label>
+                <input
+                  type="checkbox"
+                  id="billing_address"
+                  name="billing_address"
+                />
+                <p>Check if billing address is the same as street address.</p>
+              </span>
+            </li>
+            <li>
+              <label for="credit" class="register-label">Credit Card:</label>
+              <input type="number" id="credit" name="credit" />
+            </li>
+            <li>
+              <label for="cvv" class="register-label">3-digit CVV:</label>
+              <input type="number" id="cvv" name="cvv" />
+            </li>
+            <li>
+              <label for="expires" class="register-label">Expiration:</label>
+              <input type="date" id="expires" name="expires" />
+            </li> -->
+            <li class="register-li" id="button-li">
+              <button type="submit">Register</button>
+            </li>
+            <li class="register-li" id="img2-li">
+              <img
+                src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/in8-devin-kleu-unsplash.jpg?v=1645935029934"
+                alt="Tree house interior with bed, chair, and desk"
+              />
+            </li>
+          </ul>
+        </form>
+        <div id="feedback">
+
+        </div>
+        <hr />
+    </main>
+    <footer class="register-box">
+      <p id="footer-p">&copy; 2022 Tree Top Traveler - Joel Jensen - WDD130-11</p>
+      <a id="site-plan" href="./site-plan.html">Site Plan</a>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img
+            id="fb"
+            src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/fb_mono.png?v=1647134353172"
+            alt="Facebook icon"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            id="ig"
+            src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/ig_mono.png?v=1647134358129"
+            alt="Instagram icon"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img
+            id="tw"
+            src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/tw_mono.png?v=1647134365583"
+            alt="Twitter icon"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img
+            id="yt"
+            src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/yt_mono.png?v=1647134369263"
+            alt="YouTube icon"
+        /></a>
+        <a href="https://www.pinterest.com/" target="_blank"
+          ><img
+            id="pn"
+            src="https://cdn.glitch.global/ba242f2b-4abd-4eae-a8b8-cc7504d69738/pn_mono.png?v=1647134361586"
+            alt="Pintrest icon"
+        /></a>
+      </div>
+    </footer>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById('feedback');
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener('submit', function(e) {
+          // stop the form from doing the default action
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML = 'Hello '+ formElement.fname.value +'! Thank you for registering! Please take a look at our available listings.';
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+          // add a class to move everything down so our message doesn't cover it.
+          document.body.classList.toggle('moveDown');
+      });
+    </script>
+  </body>
+</html>

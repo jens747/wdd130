@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      image {
+        max-width: 100%;
+      }
+
+      p {
+        margin: 16px;
+      }
+
+      footer {
+        margin: 16px;
+      }
+
+      .card {
+        width: 320px;
+        box-shadow: 1px 1px 4px 1px #888;
+        border-radius: 3px;
+        background-color: white;
+        overflow: hidden;
+        font-family: helvetica, arial, sans-serif;
+      }
+
+      .viewButton {
+        border: 1px solid #333;
+        color: #777;
+        background: white;
+        font-family: helvetica, arial, sans-serif;
+        border-radius: 3px 0 0 3px;
+        margin: 0 0 20px 0;
+        padding: 7px 9px;
+        float: left;
+      }
+
+      .editButton {
+        border: 1px solid #333;
+        border-left: none;
+        color: #777;
+        background: white;
+        font-family: helvetica, arial, sans-serif;
+        border-radius: 0 3px 3px 0;
+        margin: 0;
+        padding: 7px 9px;
+        float: left;
+      }
+
+      span {
+        float: right;
+        color: #888;
+        margin-top: 8px;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <img src="https://picsum.photos/320/240" alt="randomly generated image" />
+      <p>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </p>
+      <footer>
+        <button class="viewButton" onclick="get_time(event)">View</button>
+        <button class="editButton">Edit</button>
+        <span id="date-min"></span>
+      </footer>
+    </article>
+<!--     Source: https://careerkarma.com/blog/javascript-timestamp/ -->
+    <script>
+      function get_time(event) {
+        const t = new Date().getMinutes();
+        document.getElementById("date-min").innerText = t + " mins";
+      }
+      
+      get_time(event);
+    </script>
+  </body>
+</html>
